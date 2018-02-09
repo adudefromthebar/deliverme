@@ -8,6 +8,10 @@
   src: url("StratumNo1 Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
+html, body {
+  background-color: #95A5A6!important;
+}
+
 .navbar-inverse {
   background-color: rgba(0,0,0,0.5)!important;
 }
@@ -133,30 +137,105 @@ button:focus {
 /* Jumbotron header*/
 
 .jumbotron {
-  padding: 0px!important;
-  margin: none!important;
-}
-
-.jumbotronPicture {
-  width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imgur.com/SvnuN4M.png');
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  color: #fff;
   height: 90%;
-  padding-top: none!important;
-  margin: none!important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative!important;
+  padding-bottom: 0px!important;
+  margin-bottom: 0px!important;
+  clear: none;
 }
 
-.jumbotronText {
-  padding-top: 50px;
+.headerText {
+  color: #ffffff!important;
+  padding-top: 150px;
+  text-align: center!important;
+  font-family: 'Francois One', sans-serif;
+  letter-spacing: 7px;
+  font-weight: 700;
+  font-size: 80px!important;
+
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: #ffffff!important;
-    background: none!important;
+.headerSubtext {
+  color: #ffffff!important;
+  padding-top: 25px;
+  font-family: "Nunito Sans";
+  text-align: center!important;
+  font-size: 22px!important;
+}
+
+/*About section*/
+
+.features {
+  background-color: #95A5A6!important;
+  padding-top: 0px!important;
+  margin-top: 0px!important;
+  clear: none!important;
+}
+
+.featuresTitleText {
+  color: #ffffff!important;
+  font-family: 'Francois One', sans-serif;
+  text-align: center!important;
+  font-size: 30px!important;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.features1 {
+  text-align: center!important;
+}
+
+.featuresColumn {
+  background-color: #95A5A6!important;
+}
+
+.featuresColumnContent {
+  color: #ffffff!important;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.featuresColumnTitle {
+  color: #ffffff!important;
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
+}
+
+.whyUs {
+  padding-top: 100px!important;
+  background-color: #ffffff!important;
+  padding-bottom: 100px!important;
+}
+
+.whyUsTitle {
+  color: #95A5A6!important;
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.whyUsContent {
+  color: #95A5A6!important;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Footer */
+
+.deliverFooter {
+  background-color: #222222;
+}
+
+.deliverFooterContent {
+  padding-top: 35px;
+  color: #93A3B1!important;
+  text-align: center;
+  padding-bottom: 35px;
+  font-family: 'Francois One', sans-serif;
 }
