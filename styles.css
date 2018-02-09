@@ -18,6 +18,15 @@
 
 .navtext {
   text-align: center!important;
+  padding-bottom: 5px!important;
+}
+
+.navbar-nav .nav {
+    float: none!important;
+    text-align: center!important;
+    height: 75px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 a.navtext {
@@ -26,7 +35,7 @@ a.navtext {
 	font-family: "Nunito Sans";
 	text-decoration: none;
 	position: relative;
-	padding: 5px;
+	margin-left: 5px;
   font-size: 15px;
 }
 
@@ -37,11 +46,7 @@ a.navtext:before {
   height: 2px;
   bottom: 0;
  	left: 0;
-  background: red;
-  background: -webkit-linear-gradient(left, #F1A9A0 , #2DE3C8);
-  background: -o-linear-gradient(right, #F1A9A0 , #2DE3C8);
-  background: -moz-linear-gradient(right, #F1A9A0 , #2DE3C8);
-  background: linear-gradient(to right, #F1A9A0 , #2DE3C8);
+  background: #ffffff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -55,10 +60,36 @@ a.navtext:hover:before {
   transform: scaleX(1);
 }
 
-.navbar.navbar-inverse .navbar-collapse {
-  border: none!important;
-  box-shadow: none!important;
+/*Centers the hamburger and navbar items*/
+
+.navbar-nav {
+  text-align: center!important;
+  align-self: center!important;
+  float: none!important;
+  vertical-align: top!important;
+  display: inline-block!important;
 }
+
+.navbar .navbar-collapse {
+  text-align: center!important;
+}
+
+.navbar-collapse.in {
+    overflow: hidden!important;
+    max-height: none !important;
+    height: auto !important;
+}
+
+.navbar-header{
+    text-align: center!important;
+}
+
+.navbar-toggle {
+    float: none!important;
+    margin-right:0!important;
+}
+
+/*Makes the hamburger box uncolored when any interactions*/
 
 button {
   border: transparent!important;
@@ -89,6 +120,43 @@ button:hover {
   background-color: transparent!important;
 }
 
-body {
-  background-color: #ffffff!important;
+button:hover::after {
+  color: transparent!important;
+  background-color: transparent!important;
+}
+
+button:focus {
+  color: transparent!important;
+  background-color: transparent!important;
+}
+
+/* Jumbotron header*/
+
+.jumbotron {
+  padding: 0px!important;
+  margin: none!important;
+}
+
+.jumbotronPicture {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imgur.com/SvnuN4M.png');
+  height: 90%;
+  padding-top: none!important;
+  margin: none!important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative!important;
+}
+
+.jumbotronText {
+  padding-top: 50px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff!important;
+    background: none!important;
 }
